@@ -1,0 +1,113 @@
+/*===========================AJUSTES PADRÃO===========================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif !important;
+    width: 100%;
+    height: 100vh;
+    transition: .6s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #4880a5 !important;
+}
+
+input {
+    color-scheme: dark;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul{
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+textarea {
+    resize: none!important;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+.calculadora{
+    background-color: #00101b;
+    padding: 2px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.visor{
+    background-color: #1f2e38;
+    height: 100px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 40px;
+    color: #e9e9e9;
+}
+
+.botoes{
+    display: grid;
+    grid-auto-rows: 71px;
+    grid-template-columns: repeat(4, 72.5px);
+    gap: 2px;
+    font-size: 20px;
+}
+
+.botoes .button2{
+    background-color: #384c57;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0099ff;
+    border-radius: 5px;
+    font-weight: 600 !important;
+}
+
+.botoes .button{
+    background-color: #1f2e38;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.btn-zero{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.btn-igual{
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column: 4;
+    background-color: #0099ff !important;
+    color: white !important;
+}
