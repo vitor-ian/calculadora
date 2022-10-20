@@ -28,36 +28,37 @@
 </head>
 
 <body>
-    <div class="calculadora">
+    <h1>CalculaTorto</h1>
+    <div class="calculadora" id="content-app">
         <div>
-            <input id="visor" class="visor" type="text" value="0" readonly>
+            <input id="field1" class="visor" type="text" value="0" readonly>
         </div>
 
         <div class="botoes">
-            <button onclick="addValor('C')" class="button2">C</button>
-            <button onclick="addValor('%')" class="button2">%</button>
-            <button onclick="addValor('/')" class="button2">/</button>
-            <button onclick="addValor('x')" class="button2">x</button>
+            <button onclick='removeLastNumber()' id='removeLast' class="button2">B</button>
+            <button onclick='cleartxt()' id='C' class="button2">C</button>
+            <button onclick='setOperator(this)' id='divide' class="button2">/</button>
+            <button onclick='setOperator(this)' id='multi' class="button2">x</button>
 
-            <button onclick="addValor(7)" class="button">7</button>
-            <button onclick="addValor(8)" class="button">8</button>
-            <button onclick="addValor(9)" class="button">9</button>
-            <button onclick="addValor('-')" class="button2">-</button>
+            <button onclick='writeNumber(this)' id='n7' class="button">7</button>
+            <button onclick='writeNumber(this)' id='n8' class="button">8</button>
+            <button onclick='writeNumber(this)' id='n9' class="button">9</button>
+            <button onclick='setOperator(this)' id='sustract' class="button2">-</button>
 
-            <button onclick="addValor(4)" class="button">4</button>
-            <button onclick="addValor(5)" class="button">5</button>
-            <button onclick="addValor(6)" class="button">6</button>
-            <button onclick="addValor('+')" class="button2">+</button>
+            <button onclick='writeNumber(this)' id='n4' class="button">4</button>
+            <button onclick='writeNumber(this)' id='n5' class="button">5</button>
+            <button onclick='writeNumber(this)' id='n6' class="button">6</button>
+            <button onclick='setOperator(this)' id='sum' class="button2">+</button>
 
-            <button onclick="addValor(1)" class="button">1</button>
-            <button onclick="addValor(2)" class="button">2</button>
-            <button onclick="addValor(3)" class="button">3</button>
-            <button onclick="addValor('=')" class="button2 btn-igual">=</button>
+            <button onclick='writeNumber(this)' id='n1' class="button">1</button>
+            <button onclick='writeNumber(this)' id='n2' class="button">2</button>
+            <button onclick='writeNumber(this)' id='n3' class="button">3</button>
+            <button onclick='setDecimal(this,true)' id='dec' class="button2">.</button>
 
-            <button onclick="addValor(0)" class="button btn-zero">0</button>
+            <button onclick='writeNumber(this)' id='n0' class="button btn-zero">0</button>
+            <button onclick='calculate()' id='calcular' class="button2 btn-igual">=</button>
         </div>
     </div>
-   
 
     <!--BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

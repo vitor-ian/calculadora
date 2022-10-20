@@ -1,5 +1,6 @@
 /*===========================AJUSTES PADRÃO===========================*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
 * {
     padding: 0px;
     margin: 0px;
@@ -19,8 +20,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     background-color: #4880a5 !important;
+}
+
+h1{
+    color: #00101b;
+    font-weight: 600 !important;
+    font-size: 30px !important;
+    margin-bottom: 50px !important;
 }
 
 input {
@@ -55,8 +64,8 @@ textarea {
 
 .calculadora{
     background-color: #00101b;
-    padding: 2px;
-    width: 300px;
+    padding: 10px;
+    width: 317px;
     border-radius: 5px;
 }
 
@@ -65,7 +74,7 @@ textarea {
     height: 100px;
     width: 100%;
     padding: 15px;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
     border-radius: 5px;
     text-align: right;
     font-size: 40px;
@@ -105,9 +114,6 @@ textarea {
 }
 
 .btn-igual{
-    grid-row-start: 4;
-    grid-row-end: 6;
-    grid-column: 4;
     background-color: #0099ff !important;
     color: white !important;
 }
